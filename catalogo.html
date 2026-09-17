@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div>
+                <h2>TecnoSell</h2>
+                <span>Gestión Comercial</span>
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="avatar">PG</div>
+            <div>
+                <h4>Pedro García</h4>
+                <span>Cliente</span>
+            </div>
+        </div>
+
+        <div class="menu-title">MENÚ</div>
+
+        <nav>
+            
+                <i class="fa-solid fa-house"></i>
+                <a href="dashboard.html">Inicio </a>
+            </a>
+
+            
+                <i class="fa-solid fa-cube"></i>
+                <a href="catalogo.html">Catálogo de Productos</a>
+            </a>
+
+            
+                <i class="fa-solid fa-file-circle-plus"></i>
+                <a href="cotizacion.html">Solicitar Cotización</a>
+            </a>
+
+            
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="seguimiento.html">Seguimiento</a>
+            </a>
+
+            
+                <i class="fa-regular fa-user"></i>
+                <a href="perfil.html">Perfil</a>
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="index.html">Salir</a>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+            <input type="text" placeholder="Buscar cotizaciones, clientes..." />
+
+            <div class="topbar-right">
+                <span class="chip">Cliente</span>
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div class="profile">
+                    <div class="avatar small">PG</div>
+                    <div>
+                        <strong>Pedro García</strong>
+                        <small>Constructora Andina S.A.S</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <section class="content">
+
+            <div class="page-header">
+                <h1>Catálogo de Productos</h1>
+                <p>12 productos • Solo lectura</p>
+            </div>
+
+            <div class="filters">
+                <input type="text" placeholder="Buscar por nombre, marca..." />
+
+                <div class="tabs">
+                    <button class="active">Todos</button>
+                    <button>Computadores</button>
+                    <button>Monitores</button>
+                    <button>Smartphones</button>
+                    <button>Servidores</button>
+                    <button>Redes</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <span class="category">Computadores</span>
+
+                    <img src="/img/Laptop-Dell-XPS-15.jpg" alt="">
+
+                    <div class="product-info">
+                        <small>DL-XP15-001</small>
+
+                        <h3>Laptop Dell XPS 15</h3>
+
+                        <p>
+                            Procesador Intel Core i7, 16GB RAM,
+                            SSD 512GB, pantalla 4K OLED.
+                        </p>
+
+                        <div class="card-footer">
+                            <div>
+                                <h2>$2899</h2>
+                                <span>14 en stock</span>
+                            </div>
+
+                            <button>Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="category">Monitores</span>
+
+                    <img src="/img/Monitor-LG-UltraWide-34.jpg" alt="">
+
+                    <div class="product-info">
+                        <small>LG-UW34-002</small>
+
+                        <h3>Monitor LG UltraWide 34"</h3>
+
+                        <p>
+                            Resolución 3440x1440, 144Hz,
+                            HDR10 compatible.
+                        </p>
+
+                        <div class="card-footer">
+                            <div>
+                                <h2>$649</h2>
+                                <span>8 en stock</span>
+                            </div>
+
+                            <button>Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="category">Smartphones</span>
+
+                    <img src="/img/iPhone-15-Pro-256GB.webp" alt="">
+
+                    <div class="product-info">
+                        <small>AP-IP15-003</small>
+
+                        <h3>iPhone 15 Pro 256GB</h3>
+
+                        <p>
+                            Cámara de alta resolución,
+                            procesador de última generación.
+                        </p>
+
+                        <div class="card-footer">
+                            <div>
+                                <h2>$1199</h2>
+                                <span>22 en stock</span>
+                            </div>
+
+                            <button>Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="category">Servidores</span>
+
+                    <img src="/img/servidores.jpg" alt="">

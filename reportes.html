@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes y Estadísticas - TecnoSell</title>
+    <link rel="stylesheet" href="reportes.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">TS</div>
+
+            <div class="logo-text">
+                <strong>TecnoSell</strong>
+                <span>Gestión Comercial</span>
+            </div>
+        </div>
+
+        <div class="user-box">
+            <div class="avatar">CM</div>
+
+            <div class="user-info">
+                <strong>Carlos Mendoza</strong>
+                <span>Administrador</span>
+            </div>
+        </div>
+
+        <div class="menu-title">Menú</div>
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">⌂</span>
+                <a href="dashboard.html">Inicio </a>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">♙</span>
+                <a href="gestionUsuarios.html">Gestion de Usuarios</a>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">◇</span>
+                <a href="catalogo.html">Catálogo de Productos</a>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">▱</span>
+                <a href="cotizacion.html">Solicitar Cotización</a>
+                
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">⌕</span>
+                <a href="seguimiento.html">Seguimiento</a>
+            </a>
+
+            <a href="#" class="menu-item active">
+                <span class="menu-icon">▥</span>
+                <a href="reportes.html">Reportes</a>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">♙</span>
+                <a href="perfil.html">Perfil</a>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="plan-card">
+                <strong>Plan Empresarial</strong>
+
+                <p>67 / 100 cotizaciones</p>
+
+                <div class="progress">
+                    <span></span>
+                </div>
+
+                <a href="#">Actualizar plan →</a>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="close">×</div>
+
+            <div class="search">
+                <span>⌕</span>
+                Buscar cotizaciones, clientes...
+            </div>
+
+            <div class="top-actions">
+
+                <div class="role">
+                    Administrador
+                </div>
+
+                <div class="notification">
+                    ♧
+                </div>
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        CM
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Carlos Mendoza</strong>
+                        <span>TecnoSell S.A.S</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <div class="page-title">
+
+                    <h1>Reportes y Estadísticas</h1>
+
+                    <p>Análisis del rendimiento comercial</p>
+
+                </div>
+
+                <div class="period">
+
+                    <span class="active">Mensual</span>
+                    <span>Trimestral</span>
+                    <span>Anual</span>
+
+                    <div class="export">
+
+                        <button>▧ PDF</button>
+                        <button>⇩ Excel</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- KPI -->
+
+            <div class="kpis">
+
+                <div class="kpi">
+
+                    <div class="kpi-label green">
+                        <span class="status-dot"></span>
+                        Aprobadas
+                    </div>
+
+                    <div class="kpi-value">
+                        44
+                    </div>
+
+                    <div class="kpi-change green">
+                        65.7% aprobación
+                    </div>
+
+                </div>
+
+
+                <div class="kpi">
+
+                    <div class="kpi-label red">
+                        <span class="status-dot"></span>
+                        Rechazadas
+                    </div>
+
+                    <div class="kpi-value">
+                        3
+                    </div>
+
+                    <div class="kpi-change red">
+                        4.5% rechazo
+                    </div>
+
+                </div>
+
+
+                <div class="kpi">
+
+                    <div class="kpi-label orange">
+                        <span class="status-dot"></span>
+                        T. Respuesta
+                    </div>
+
+                    <div class="kpi-value">
+                        2.4 <small style="font-size:9px;">días</small>
+                    </div>
+
+                    <div class="kpi-change green">
+                        -0.6 días
+                    </div>
+
+                </div>
+
+
+                <div class="kpi">
+
+                    <div class="kpi-label purple">
+                        $
+                        Ingresos
+                    </div>
+
+                    <div class="kpi-value">
+                        $312K
+                    </div>
+
+                    <div class="kpi-change green">
+                        +43% vs anterior
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHARTS -->
+
+            <div class="charts">
+
+                <!-- BAR CHART -->
+
+                <div class="card chart-card">
+
+                    <div class="card-title">
+                        Ingresos por Mes
+                    </div>
+
+                    <div class="card-subtitle">
+                        USD - Cotizaciones aprobadas
+                    </div>
+
+                    <div class="bar-chart">
+
+                        <div class="y-axis">
+                            <span>$320K</span>
+                            <span>$240K</span>
+                            <span>$160K</span>
+                            <span>$80K</span>
+                            <span>$0K</span>
+                        </div>
+
+                        <div class="bars-area">
+
+                            <div class="bar-group">
+                                <div class="bar" style="height:43%;"></div>
+                                <span class="bar-label">Jun</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar" style="height:57%;"></div>
+                                <span class="bar-label">Jul</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar" style="height:50%;"></div>
+                                <span class="bar-label">Ago</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar" style="height:72%;"></div>
+                                <span class="bar-label">Sep</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar" style="height:64%;"></div>
+                                <span class="bar-label">Oct</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar" style="height:92%;"></div>
+                                <span class="bar-label">Nov</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LINE CHART -->
+
+                <div class="card chart-card">
+
+                    <div class="card-title">
+                        Tasa de Conversión
+                    </div>
+
+                    <div class="card-subtitle">
+                        Generadas vs aprobadas
+                    </div>
+
+                    <div class="line-chart">
+
+                        <svg viewBox="0 0 500 120" preserveAspectRatio="none">
+
+                            <!-- Grid -->
+
+                            <line x1="40" y1="10" x2="490" y2="10"
+                                  stroke="#edf1f5" stroke-width="1"/>
+
+                            <line x1="40" y1="35" x2="490" y2="35"
+                                  stroke="#edf1f5" stroke-width="1"/>
+
+                            <line x1="40" y1="60" x2="490" y2="60"
+                                  stroke="#edf1f5" stroke-width="1"/>
+
+                            <line x1="40" y1="85" x2="490" y2="85"
+                                  stroke="#edf1f5" stroke-width="1"/>
+
+                            <line x1="40" y1="110" x2="490" y2="110"
+                                  stroke="#edf1f5" stroke-width="1"/>
+
+
+                            <!-- Generated -->
+
+                            <polyline
+                                points="40,70 130,58 220,64 310,42 400,50 490,27"
+                                fill="none"
+                                stroke="#92a0b3"
+                                stroke-width="2"
+                            />
+
+                            <!-- Approved -->
+
+                            <polyline
+                                points="40,88 130,78 220,81 310,63 400,70 490,49"
+                                fill="none"
+                                stroke="#16b878"
+                                stroke-width="2"
+                            />
+
+                            <!-- Points -->
+
+                            <g fill="#92a0b3">
+                                <circle cx="40" cy="70" r="2.5"/>
+                                <circle cx="130" cy="58" r="2.5"/>
+                                <circle cx="220" cy="64" r="2.5"/>
+                                <circle cx="310" cy="42" r="2.5"/>
+                                <circle cx="400" cy="50" r="2.5"/>
+                                <circle cx="490" cy="27" r="2.5"/>
+                            </g>
+
+                            <g fill="#16b878">
+                                <circle cx="40" cy="88" r="2.5"/>
+                                <circle cx="130" cy="78" r="2.5"/>
+                                <circle cx="220" cy="81" r="2.5"/>
+                                <circle cx="310" cy="63" r="2.5"/>
+                                <circle cx="400" cy="70" r="2.5"/>
+                                <circle cx="490" cy="49" r="2.5"/>
+                            </g>
+
+                        </svg>
+
+                        <div class="chart-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line legend-green"></span>
+                                Aprobadas
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line legend-gray"></span>
+                                Generadas
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM -->
+
+            <div class="bottom-grid">
+
+                <!-- PRODUCTS -->
+
+                <div class="card table-card">
+
+                    <div class="table-header">
+
+                        <div class="card-title">
+                            Productos más Cotizados
+                        </div>
+
+                    </div>
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Producto</th>
+                                <th>Cotizaciones</th>
+                                <th>Monto</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="product-number">
+                                    <div class="product-icon">◉</div>
+                                </td>
+
+                                <td>
+                                    <div class="product-name">
+                                        <strong>Laptop Dell XPS 15</strong>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="quote-count">
+
+                                        <div class="mini-progress">
+                                            <span></span>
+                                        </div>
+
+                                        28
+
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <strong>$81.172</strong>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    <div class="product-icon">◉</div>
+                                </td>
+
+                                <td>
+                                    <strong>Monitor LG UltraWide</strong>
+                                </td>
+
+                                <td>
+                                    <div class="quote-count">
+
+                                        <div class="mini-progress">
+                                            <span style="width:65%;"></span>
+                                        </div>
+
+                                        21
+
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <strong>$43.580</strong>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    <div class="product-icon">◉</div>
+                                </td>
+
+                                <td>
+                                    <strong>MacBook Pro 14</strong>
+                                </td>
+
+                                <td>
+                                    <div class="quote-count">
+
+                                        <div class="mini-progress">
+                                            <span style="width:50%;"></span>
+                                        </div>
+
+                                        17
+
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <strong>$67.250</strong>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- CLIENTS -->
+
+                <div class="card table-card">
+
+                    <div class="table-header">
+
+                        <div class="card-title">
+                            Clientes con Mayor Actividad
+                        </div>
+
+                    </div>
+
+
+                    <div class="client">
+
+                        <div class="client-avatar">
+                            CO
+                        </div>
+
+                        <div class="client-info">
+
+                            <strong>Constructora Andina S.A.S</strong>
+
+                            <span>
+                                12 cotizaciones · $112.450
+                            </span>
+
+                        </div>
+
+                        <div class="client-status"></div>
+
+                    </div>
+
+
+                    <div class="client">
+
+                        <div class="client-avatar">
+                            TE
+                        </div>
+
+                        <div class="client-info">
+
+                            <strong>TechCorp Colombia Ltda</strong>
+
+                            <span>
+                                9 cotizaciones · $87.320
+                            </span>
+
+                        </div>
+
+                        <div class="client-status"></div>
+
+                    </div>
+
+
+                    <div class="client">
+
+                        <div class="client-avatar">
+                            IN
+                        </div>
+
+                        <div class="client-info">
+
+                            <strong>Industrias Nacionales</strong>
+
+                            <span>
+                                7 cotizaciones · $63.850
+                            </span>
+
+                        </div>
+
+                        <div class="client-status"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="help">?</div>
+
+</body>
+</html>

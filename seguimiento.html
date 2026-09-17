@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="seguimiento.css">
+</head>
+<body>
+
+<div class="layout">
+
+   <aside class="sidebar">
+     <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>TecnoSell</h2>
+                <p>Gestión Comercial</p>
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="avatar">PG</div>
+
+            <div>
+                <strong>Pedro García</strong>
+                <span>Cliente</span>
+            </div>
+        </div>
+
+        <span class="menu-title">MENÚ</span>
+
+        <nav>
+            
+                <i class="fa-solid fa-house"></i>
+                <a href="dashboard.html">Inicio </a>
+            </a>
+
+            
+                <i class="fa-solid fa-cube"></i>
+                <a href="catalogo.html">Catálogo de Productos</a>
+            </a>
+
+            
+                <i class="fa-regular fa-file-lines"></i>
+                <a href="cotizacion.html">Solicitar Cotización</a>
+            </a>
+
+            
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="seguimiento.html">Seguimiento</a>
+            </a>
+
+            
+                <i class="fa-regular fa-user"></i>
+                <a href="perfil.html">Perfil</a>
+            </a>
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="index.html">Salir</a>
+        </nav>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <input
+                type="text"
+                placeholder="Buscar cotizaciones, clientes..."
+            >
+
+            <div class="topbar-right">
+
+                <span class="chip">
+                    Cliente
+                </span>
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div class="profile">
+                    <div class="avatar small">
+                        PG
+                    </div>
+
+                    <div>
+                        <strong>Pedro García</strong>
+                        <small>Constructora Andina S.A.S</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Página -->
+        <section class="content">
+
+            <div class="page-header">
+
+                <div>
+                    <h1>Mis Solicitudes</h1>
+                    <p>4 registros · Mis solicitudes</p>
+                </div>
+
+                <div class="actions">
+                    <button class="btn">
+                        <i class="fa-solid fa-download"></i>
+                        Exportar
+                    </button>
+
+                    <button class="btn-icon">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- filtros -->
+
+            <div class="filters">
+
+                <div class="search-filter">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar solicitud..."
+                    >
+                </div>
+
+                <select>
+                    <option>Todos los estados</option>
+                    <option>Aprobada</option>
+                    <option>Borrador</option>
+                    <option>Rechazada</option>
+                </select>
+
+            </div>
+
+            <!-- tabla -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+                        <th>N° COTIZACIÓN</th>
+                        <th>CREACIÓN</th>
+                        <th>ENTREGA</th>
+                        <th>TOTAL</th>
+                        <th>ESTADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>COT-2024-001</td>
+                        <td>31 oct 2024</td>
+                        <td>07 nov 2024</td>
+                        <td>$24.650</td>
+
+                        <td>
+                            <span class="status approved">
+                                Aprobada
+                            </span>
+                        </td>
+
+                        <td>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>COT-2024-005</td>
+                        <td>07 nov 2024</td>
+                        <td>14 nov 2024</td>
+                        <td>$67.850</td>
+
+                        <td>
+                            <span class="status approved">
+                                Aprobada
+                            </span>
+                        </td>
+
+                        <td>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>COT-2024-006</td>
+                        <td>09 nov 2024</td>
+                        <td>16 nov 2024</td>
+                        <td>$5.499</td>
+
+                        <td>
+                            <span class="status draft">
+                                Borrador
+                            </span>
+                        </td>
+
+                        <td>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>COT-2024-010</td>
+                        <td>13 nov 2024</td>
+                        <td>20 nov 2024</td>
+                        <td>$52.100</td>
+
+                        <td>
+                            <span class="status approved">
+                                Aprobada
+                            </span>
+                        </td>
+
+                        <td>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+                <div class="pagination">
+                    <span>1 - 4 de 4</span>
+
+                    <div class="page-number">
+                        1
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

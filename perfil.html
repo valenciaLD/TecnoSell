@@ -1,0 +1,258 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Perfil</title>
+
+        <link rel="stylesheet" href="perfil.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+
+    <body>
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div>
+                    <h2>TecnoSell</h2>
+                    <span>Gestión Comercial</span>
+                </div>
+            </div>
+
+            <div class="user-card">
+                <div class="avatar">PG</div>
+
+                <div>
+                    <strong>Pedro García</strong>
+                    <small>Cliente</small>
+                </div>
+            </div>
+
+            <div class="menu-title">MENÚ</div>
+
+            <nav>
+
+                
+                    <i class="fa-solid fa-house"></i>
+                    <a href="dashboard.html">Inicio </a>
+                </a>
+
+                
+                    <i class="fa-solid fa-cube"></i>
+                    <a href="catalogo.html">Catálogo de Productos</a>
+                </a>
+
+                
+                    <i class="fa-regular fa-file-lines"></i>
+                    <a href="cotizacion.html">Solicitar Cotización</a>
+                </a>
+
+                
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="seguimiento.html">Seguimiento</a>
+                </a>
+
+                
+                    <i class="fa-regular fa-user"></i>
+                    <a href="perfil.html">Perfil</a>
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="index.html">Salir</a>
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <header class="topbar">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar cotizaciones, clientes..."
+                    >
+                </div>
+
+                <div class="topbar-right">
+
+                    <span class="chip">
+                        Cliente
+                    </span>
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <div class="top-user">
+
+                        <div class="avatar-small">
+                            PG
+                        </div>
+
+                        <div>
+                            <strong>Pedro García</strong>
+                            <small>Constructora Andina S.A.S</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="content">
+
+                <h1>Mi Perfil</h1>
+
+                <!-- PERFIL -->
+                <div class="card">
+
+                    <div class="profile-header">
+
+                        <div class="profile-info">
+
+                            <div class="avatar-large">
+                                PG
+                            </div>
+
+                            <div>
+
+                                <div class="name-line">
+                                    <h2>Pedro García</h2>
+
+                                    <span class="role">
+                                        Cliente
+                                    </span>
+                                </div>
+
+                                <p class="company">
+                                    Constructora Andina S.A.S
+                                </p>
+
+                                <div class="contact-data">
+
+                                    <span>
+                                        <i class="fa-regular fa-envelope"></i>
+                                        pedro@constructoraandina.co
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-phone"></i>
+                                        +57 318 904 5510
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button class="btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                            Editar
+                        </button>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="form-grid">
+
+                        <div class="field">
+                            <label>Nombre completo</label>
+                            <input
+                                type="text"
+                                value="Pedro García">
+                        </div>
+
+                        <div class="field">
+                            <label>Correo electrónico</label>
+                            <input
+                                type="email"
+                                value="pedro@constructoraandina.co">
+                        </div>
+
+                        <div class="field">
+                            <label>Teléfono</label>
+                            <input
+                                type="text"
+                                value="+57 318 904 5510">
+                        </div>
+
+                        <div class="field">
+                            <label>Empresa</label>
+                            <input
+                                type="text"
+                                value="Constructora Andina S.A.S">
+                        </div>
+
+                    </div>
+
+                    <div class="action-buttons">
+
+                        <button class="btn-secondary">
+                            Cancelar
+                        </button>
+
+                        <button class="btn-primary">
+                            Guardar cambios
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- SEGURIDAD -->
+                <div class="card">
+
+                    <h3 class="security-title">
+                        <i class="fa-solid fa-lock"></i>
+                        Seguridad
+                    </h3>
+
+                    <div class="field">
+                        <label>Contraseña actual</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="password-grid">
+
+                        <div class="field">
+                            <label>Nueva contraseña</label>
+
+                            <input
+                                type="password"
+                                placeholder="Mínimo 8 caracteres">
+                        </div>
+
+                        <div class="field">
+                            <label>Confirmar contraseña</label>
+
+                            <input
+                                type="password"
+                                placeholder="Repite la contraseña">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    </body>
+    </html>

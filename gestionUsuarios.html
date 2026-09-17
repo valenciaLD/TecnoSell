@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+
+    <link rel="stylesheet" href="gestionUsuario.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>TecnoSell</h2>
+                <span>Gestión Comercial</span>
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="avatar">CM</div>
+
+            <div>
+                <strong>Carlos Mendoza</strong>
+                <small>Administrador</small>
+            </div>
+        </div>
+
+        <div class="menu-title">MENÚ</div>
+
+        <nav>
+
+            
+                <i class="fa-solid fa-house"></i>
+                <a href="dashboard.html">Inicio </a>
+            </a>
+
+            
+                <i class="fa-regular fa-user"></i>
+                <a href="gestionUsuarios.html">Gestion de Usuarios</a>
+            </a>
+
+            
+                <i class="fa-solid fa-cube"></i>
+                <a href="catalogo.html">Catálogo de Productos</a>
+            </a>
+
+            
+                <i class="fa-regular fa-file-lines"></i>
+                <a href="cotizacion.html">Solicitar Cotización</a>
+            </a>
+
+            
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="seguimiento.html">Seguimiento</a>
+            </a>
+
+            
+                <i class="fa-solid fa-chart-column"></i>
+                <a href="reportes.html">Reportes</a>
+            </a>
+
+            
+                <i class="fa-regular fa-user"></i>
+                <a href="perfil.html">Perfil</a>
+            </a>
+
+        </nav>
+
+        <div class="plan-card">
+
+            <h4>Plan Empresarial</h4>
+
+            <span>67 / 100 cotizaciones</span>
+
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+
+            <button>Actualizar plan →</button>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text"
+                    placeholder="Buscar cotizaciones, clientes...">
+            </div>
+
+            <div class="top-actions">
+
+                <span class="role-chip">
+                    Administrador
+                </span>
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div class="top-user">
+
+                    <div class="avatar mini">
+                        CM
+                    </div>
+
+                    <div>
+                        <strong>Carlos Mendoza</strong>
+                        <small>TecnoSell S.A.S</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="content">
+
+            <div class="page-header">
+
+                <div>
+                    <h1>Gestión de Usuarios</h1>
+                    <p>6 usuarios en el sistema</p>
+                </div>
+
+                <button class="primary-button">
+                    <i class="fa-solid fa-plus"></i>
+                    Invitar usuario
+                </button>
+
+            </div>
+
+            <!-- KPIS -->
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div>
+                        <h2>1</h2>
+                        <span>Administrador</span>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+
+                    <div>
+                        <h2>2</h2>
+                        <span>Comerciales</span>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon cyan">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div>
+                        <h2>3</h2>
+                        <span>Clientes</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FILTROS -->
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    placeholder="Buscar por nombre o correo...">
+
+                <div class="filter-buttons">
+                    <button class="active">Todos</button>
+                    <button>Administrador</button>
+                    <button>Comercial</button>
+                    <button>Cliente</button>
+                </div>
+
+            </div>
+
+            <!-- TABLA -->
+
+            <div class="table-card">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+                        <th>USUARIO</th>
+                        <th>CORREO</th>
+                        <th>EMPRESA</th>
+                        <th>ROL</th>
+                        <th>ESTADO</th>
+                        <th>REGISTRADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <div class="avatar mini blue-bg">CM</div>
+                                Carlos Mendoza
+                            </div>
+                        </td>
+                        <td>carlos@tecnosell.com</td>
+                        <td>TecnoSell S.A.S</td>
+                        <td><span class="role admin">Administrador</span></td>
+                        <td><span class="status active">Activo</span></td>
+                        <td>14 ene 2023</td>
+                        <td class="actions-cell">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <div class="avatar mini purple-bg">AR</div>
+                                Ana Rojas
+                            </div>
+                        </td>
+                        <td>ana@tecnosell.com</td>
+                        <td>TecnoSell S.A.S</td>
+                        <td><span class="role commercial">Comercial</span></td>
+                        <td><span class="status active">Activo</span></td>
+                        <td>07 mar 2023</td>
+                        <td class="actions-cell">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <div class="avatar mini cyan-bg">PG</div>
+                                Pedro García
+                            </div>
+                        </td>
+                        <td>pedro@constructoraandina.co</td>
+                        <td>Constructora Andina S.A.S</td>
+                        <td><span class="role client">Cliente</span></td>
+                        <td><span class="status active">Activo</span></td>
+                        <td>19 feb 2024</td>
+                        <td class="actions-cell">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <div class="avatar mini green-bg">MT</div>
+                                Miguel Torres
+                            </div>
+                        </td>
+                        <td>miguel@tecnosell.com</td>
+                        <td>TecnoSell S.A.S</td>
+                        <td><span class="role commercial">Comercial</span></td>
+                        <td><span class="status active">Activo</span></td>
+                        <td>10 jun 2023</td>
+                        <td class="actions-cell">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <div class="avatar mini red-bg">LV</div>
+                                Lucía Vargas
+                            </div>
+                        </td>
+                        <td>lucia@riopaila.com</td>
+                        <td>Industrias Riopaila</td>
+                        <td><span class="role client">Cliente</span></td>
+                        <td><span class="status inactive">Inactivo</span></td>
+                        <td>02 abr 2024</td>
+                        <td class="actions-cell">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
